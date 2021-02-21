@@ -585,7 +585,7 @@ Indicates that `null` is a valid value for the schema. Without `nullable()`
 #### `mixed.required(message?: string | function): Schema`
 
 Mark the schema as required, which will not allow `undefined` or `null` as a value.
-Note that unless a schema is marked as `nullable()` a `null` value is treated as a type error, not a missing value. Mark a schema as `mixed().nullable().required()` treat `null` as missing.
+Note that unless a schema is marked as `nullable()` a `null` value is treated as a type error, not a missing value. Mark a schema as `mixed().nullable().required()` to treat `null` as missing.
 
 > Watch out! [`string().required`](#stringrequiredmessage-string--function-schema)) works a little
 > different and additionally prevents empty string values (`''`) when required.
